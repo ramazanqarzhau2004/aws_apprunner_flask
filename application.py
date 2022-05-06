@@ -12,7 +12,7 @@ def root():
 def helppage():
     return render_template("help.html")
 
-@application.route("/hello")
+@application.route("/привет")
 def hellopage():
     NAME_F = os.getenv('NAME_FIRST', "Stupido") # Read Environment Variable
     NAME_L = os.getenv('NAME_LAST',  "Usero")   # Read Environment Variable
